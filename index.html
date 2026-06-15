@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentro Internacional de Clubes de Ciencia y Tecnología | CONCYTEC</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="config-tailwind.js"></script>
+
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <header id="inicio" class="relative h-[80vh] flex items-center justify-center text-center text-white bg-slate-900">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-40">
+            <source src="assets/video/encuentros.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/50"></div>
+
+        <div class="relative z-10 px-4 mt-80 animate__animated animate__fadeInUp">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">II Encuentro Nacional y <br>II Encuentro Internacional de <br> <span class="text-brand">Clubes de Ciencia y Tecnología</span></h1>
+            <p class="text-xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto">Huánuco, 2026</p>
+            <p class="text-xl md:text-3xl mb-6 max-w-2xl mx-auto">18, 19 y 20 de agosto</p>
+            
+            <div class="flex py-0 flex-wrap justify-center gap-4">
+                <a href="https://sites.google.com/concytec.gob.pe/pop/eiccyt/monologos" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Concurso de monólogos</a>
+                <a href="https://www.youtube.com/watch?v=rc3lQS-NrHs&t=8s" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Taller de inducción</a>
+                <a href="https://forms.gle/Jagw4j2ENNtJgktn9" target="_blank" class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Memoria del encuentro</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="sub-nav flex flex-wrap justify-center">
+        <a href="#presentacion">Sobre el encuentro</a>
+        <!-- <a href="#eiccyt">EICCYT Huánuco 2026</a> -->
+        <a href="#programa">Programa</a>
+        <!-- <a href="#ponentes">Ponentes</a> -->
+        <a href="#clubes">CCyT participantes</a>
+        <!-- <a href="#actividades">Actividades</a> -->
+    </div>
+
+    <!-- -----------------
+    SECCION PRESENTACION
+    ---------------------- -->
+
+    <section id="presentacion" class="py-20 bg-slate-100">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-dark tracking-wider">Sobre el Encuentro de CCYT</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-3 gap-8 items-stretch mb-12">
+                
+                <div class="bg-white rounded-2xl shadow-xl border-t-4 border-brand overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col">
+                    <div class="bg-brand/10 p-5 text-center border-b border-brand/20">
+                        <span class="text-2xl mb-1 block">📌</span>
+                        <h3 class="text-xl font-black text-slate-800">¿Qué es un encuentro?</h3>
+                    </div>
+                    
+                    <div class="p-6 flex-grow flex flex-col justify-center">
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">💬</span>
+                                <span>Es un espacio de <b class="text-brand">intercambio</b> científico-tecnológico entre estudiantes de instituciones educativas de diferentes regiones y países.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🔬</span>
+                                <span><b class="text-slate-800">Participan</b> clubes de ciencia y tecnología de todo el Perú e invitados internacionales.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🏆</span>
+                                <span><b class="text-slate-800">Presentación</b> de proyectos de investigación, experiencias de aula e innovación estudiantil.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl shadow-xl border-t-4 border-accent overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col">
+                    <div class="bg-black/20 p-5 text-center border-b border-white/10">
+                        <span class="text-2xl mb-1 block">🤔</span>
+                        <h3 class="text-xl font-black text-white">¿Para qué sirve?</h3>
+                    </div>
+                    
+                    <div class="p-6 flex-grow flex flex-col justify-center">
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🧠</span>
+                                <span><b class="text-accent">Fortalecer</b> las capacidades científicas de estudiantes.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">📖</span>
+                                <span><b class="text-white">Promover</b> la investigación escolar y el pensamiento crítico.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🤝</span>
+                                <span><b class="text-white">Articular</b> a las instituciones educativas, Concytec y comunidad científica.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🌟</span>
+                                <span><b class="text-accent">Visibilizar</b> el trabajo de los clubes de ciencia a nivel nacional e internacional.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl border-t-4 border-brand overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex flex-col">
+                    <div class="bg-brand/10 p-5 text-center border-b border-brand/20">
+                        <span class="text-2xl mb-1 block">🎯</span>
+                        <h3 class="text-xl font-black text-slate-800">Objetivos del encuentro</h3>
+                    </div>
+                    
+                    <div class="p-6 flex-grow flex flex-col justify-center">
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🔬</span>
+                                <span><b class="text-brand">Promover</b> cultura científica en la Educación Básica Regular (EBR).</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">⭐</span>
+                                <span><b class="text-slate-800">Despertar</b> el interés por las carreras STEM en jóvenes estudiantes.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">💪</span>
+                                <span><b class="text-slate-800">Reforzar</b> la vocación científica y el pensamiento crítico en los clubes.</span>
+                            </li>
+                            <li class="flex gap-3 items-start">
+                                <span class="text-base shrink-0 mt-0.5">🤝</span>
+                                <span><b class="text-dark font-bold">Intercambio</b> de experiencias, confraternidad y redes entre clubes.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://sites.google.com/concytec.gob.pe/pop/eiccyt/observatorio" class="inline-flex items-center gap-3 bg-dark hover:bg-brand text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1 group text-sm uppercase tracking-wider">
+                    <span class="text-lg transition-transform group-hover:rotate-12">📊</span> 
+                    <span>Observatorio de Encuentros de CCYT</span>
+                    <span class="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ---------------------
+    SECCION PROGRAMA GENERAL
+    -------------------------- -->
+   
+    <section id="programa" class="py-20 bg-slate-100 ">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-dark uppercase tracking-wider">PROGRAMA GENERAL</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-3 gap-8 items-stretch mb-12">
+                
+                <div class="bg-white rounded-2xl shadow-xl border-t-4 border-brand overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="bg-brand/10 p-4 text-center border-b border-brand/20">
+                        <span class="text-xs uppercase font-bold text-brand tracking-widest">18 de Agosto</span>
+                        <h3 class="text-2xl font-black text-slate-800">📌 Día 1</h3>
+                        <p class="text-sm font-medium text-slate-600 mt-1">II Encuentro Nacional de CCYT</p>
+                        <p class="text-xs font-bold text-dark mt-2 inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full shadow-sm">
+                            📍 Auditorio de la I.E. Isaac Newton
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-slate-100">
+                                <span class="text-xl">☀️</span>
+                                <h4 class="font-bold text-slate-700 uppercase text-xs tracking-wider">Bloque Mañana</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">08:30 AM</span>
+                                    <span class="text-slate-600 font-medium">Registro de las delegaciones nacionales y participantes.</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">09:30 AM</span>
+                                    <span class="text-slate-600">Inauguración del encuentro nacional</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">09:45 AM</span>
+                                    <span class="text-slate-600 font-medium">Presentación de los clubes de ciencias y tecnología.</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">12:00 PM</span>
+                                    <span class="text-slate-600">Intercambio de recuerdos entre los estudiantes de los clubes.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-slate-100">
+                                <span class="text-xl">🌙</span>
+                                <h4 class="font-bold text-slate-700 uppercase text-xs tracking-wider">Bloque Tarde</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">02:30 PM</span>
+                                    <span class="text-slate-600">Dinámicas de integración: intercambio de contactos y saberes entre delegaciones.</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">07:00 PM</span>
+                                    <span class="text-slate-600 font-semibold text-dark">Velada cultural con participación de los clubes.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark rounded-2xl shadow-xl border-t-4 border-accent overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="bg-black/20 p-4 text-center border-b border-white/10">
+                        <span class="text-xs uppercase font-bold text-accent tracking-widest">19 de Agosto</span>
+                        <h3 class="text-2xl font-black text-white">🔬 Día 2</h3>
+                        <p class="text-sm font-medium text-slate-300 mt-1">II Encuentro Internacional de CCYT</p>
+                        <p class="text-xs font-bold text-dark mt-2 inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full shadow-sm">
+                            📍 Paraninfo de la UNHEVAL
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-white/10">
+                                <span class="text-xl">☀️</span>
+                                <h4 class="font-bold text-accent uppercase text-xs tracking-wider">Bloque Mañana</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">08:30 AM</span>
+                                    <span class="text-slate-300">Registro de participantes.</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">09:00 AM</span>
+                                    <span class="text-slate-300">Inauguración del encuentro internacional.</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">09:15 AM</span>
+                                    <span class="text-slate-300"><b>MESA 1:</b> Políticas Públicas en CyT</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">10:30 AM</span>
+                                    <span class="text-slate-300">Coffee Break</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">11:00 AM</span>
+                                    <span class="text-slate-300"><b>MESA 2:</b> Modelos de gestión en el aula</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-white/10">
+                                <span class="text-xl">🌙</span>
+                                <h4 class="font-bold text-accent uppercase text-xs tracking-wider">Bloque Tarde</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">02:15 PM</span>
+                                    <span class="text-slate-300">Proyección de video</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">02:15 PM</span>
+                                    <span class="text-slate-300"><b>MESA 3:</b> Impacto de los CCyT en los estudiantes</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">03:45 PM</span>
+                                    <span class="text-slate-300">Coffee Break</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">04:00 PM</span>
+                                    <span class="text-slate-300 font-bold">🏆 Final del concurso de monólogos</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">04:30 PM</span>
+                                    <span class="text-slate-300">Exposición de investigador</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">04:45 PM</span>
+                                    <span class="text-slate-300 font-bold">🥇🥈🥉 Premiación del concurso</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-accent font-bold shrink-0">05:00 PM</span>
+                                    <span class="text-slate-300">Conclusiones y cierre del día.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl border-t-4 border-brand overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    <div class="bg-brand/10 p-4 text-center border-b border-brand/20">
+                        <span class="text-xs uppercase font-bold text-brand tracking-widest">20 de Agosto</span>
+                        <h3 class="text-2xl font-black text-slate-800">🚀 Día 3</h3>
+                        <p class="text-sm font-medium text-slate-600 mt-1">II Encuentro Nacional de CCYT</p>
+                        <p class="text-xs font-bold text-dark mt-2 inline-flex items-center gap-1 bg-white px-3 py-1 rounded-full shadow-sm">
+                            📍 Plaza Mayor de Huánuco
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 space-y-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-slate-100">
+                                <span class="text-xl">☀️</span>
+                                <h4 class="font-bold text-slate-700 uppercase text-xs tracking-wider">Bloque Mañana</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">08:30 AM</span>
+                                    <span class="text-slate-600 font-semibold">🎪 Feria de proyectos de investigación de los clubes de ciencia y tecnología</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <div class="flex items-center gap-2 mb-3 pb-1 border-b border-slate-100">
+                                <span class="text-xl">🌙</span>
+                                <h4 class="font-bold text-slate-700 uppercase text-xs tracking-wider">Bloque Tarde</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">02:00 PM</span>
+                                    <span class="text-slate-600 font-semibold text-dark">🎪 Feria de proyectos de investigación de los clubes de ciencia y tecnología</span>
+                                </li>
+                                <li class="flex gap-3 text-sm">
+                                    <span class="font-mono text-brand font-bold shrink-0">05:00 PM</span>
+                                    <span class="text-slate-600 font-semibold text-dark">🏅 Reconocimiento a los clubes y clausura del encuentro nacional e internacional.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="text-center">
+                <a href="#" target="_blank" class="inline-flex items-center gap-2 bg-brand hover:bg-brand/80 text-white font-bold px-6 py-3 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+                    <span>📄</span> Descargar Programa Oficial Completo (PDF)
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- ---------------------------------------
+    SECCION PONENTES INTERNACIONALES
+    --------------------------------------- -->
+
+    <!-- <section id="ponentes" class="py-20 bg-slate-25 ">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-dark uppercase tracking-wider">Ponentes</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="relative overflow-hidden rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent flex flex-col min-h-[300px]">
+                    <img src="assets/img/ponente1.jpg" alt="Albert Einstein" class="absolute inset-0 w-full h-full object-cover z-0" />
+                    <div class="absolute inset-0 bg-black/60 z-10"></div>
+                    <div class="relative z-20 p-8 flex flex-col h-full justify-end">
+                        <h3 class="text-xl font-bold mb-2 text-white">Albert Einstein</h3>
+                        <p class="text-slate-300 mb-2">Físico, premio nobel de Física.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent flex flex-col min-h-[300px]">
+                    <img src="assets/img/ponente4.jpg" alt="Marie Curie" class="absolute inset-0 w-full h-full object-cover z-0" />
+                    <div class="absolute inset-0 bg-black/60 z-10"></div>
+                    <div class="relative z-20 p-8 flex flex-col h-full justify-end">
+                        <h3 class="text-xl font-bold mb-2 text-white">Marie Curie</h3>
+                        <p class="text-slate-300 mb-2">Química, premio nobel de Física y Química.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent flex flex-col min-h-[300px]">
+                    <img src="assets/img/ponente2.jpg" alt="Carl Sagan" class="absolute inset-0 w-full h-full object-cover z-0" />
+                    <div class="absolute inset-0 bg-black/60 z-10"></div>
+                    <div class="relative z-20 p-8 flex flex-col h-full justify-end">
+                        <h3 class="text-xl font-bold mb-2 text-white">Carl Sagan</h3>
+                        <p class="text-slate-300 mb-4">Astrofísico, divulgador científico.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent flex flex-col min-h-[300px]">
+                    <img src="assets/img/ponente3.jpg" alt="Neil deGrasse Tyson" class="absolute inset-0 w-full h-full object-cover z-0" />
+                    <div class="absolute inset-0 bg-black/60 z-10"></div>
+                    <div class="relative z-20 p-8 flex flex-col h-full justify-end">
+                        <h3 class="text-xl font-bold mb-2 text-white">Neil deGrasse Tyson</h3>
+                        <p class="text-slate-300 mb-4">Astrofísico, divulgador científico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" target="_blank" class="text-brand font-bold hover:text-slate-400">📄 Descargar perfiles →</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ---------------------------------------
+    SECCION CLUBES DE CIENCIA PARTICIPANTES
+    --------------------------------------- -->
+
+    <section id="clubes" class="py-10 bg-slate-50">
+        <div class="container mx-auto max-w-7xl px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-dark uppercase tracking-wider">CLUBES DE CIENCIA Y TECNOLOGÍA PARTICIPANTES</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-8"></div>
+            
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 flex flex-col h-full">
+                    
+                    <div class="flex justify-center md:justify-start mb-4">
+                        <div class="bg-white p-1 rounded-xl shadow-sm border border-slate-200 inline-flex">
+                            <button id="tab-peru" class="px-6 py-2 rounded-lg font-bold text-sm transition-all duration-200 bg-accent text-white shadow-md flex items-center gap-2">
+                                <img src="https://flagcdn.com/pe.svg" alt="Perú" class="w-6 h-4 rounded-sm object-cover shadow-sm border border-slate-100 shrink-0"> Perú (54)
+                            </button>
+                            <button id="tab-intl" class="px-6 py-2 rounded-lg font-bold text-sm text-slate-500 hover:text-slate-800 transition-all duration-200 flex items-center gap-2">
+                                <span>🌎</span> Internacional (3)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-200/60 mb-4">
+                        <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                            <div id="controles-dinamicos" class="w-full md:w-auto flex flex-col sm:flex-row gap-3 items-center">
+                                
+                                <div id="filtro-region-container" class="w-full sm:w-56">
+                                    <select id="filtroRegionClub" class="w-full bg-slate-50 text-sm border border-slate-200 rounded-xl px-4 py-2 font-medium text-slate-700 focus:outline-none focus:border-brand cursor-pointer">
+                                        <option value="">Todas las Regiones</option>
+                                    </select>
+                                </div>
+
+                                <div id="filtro-banderas-container" class="hidden flex gap-2">
+                                    <button class="btn-bandera opacity-50 hover:opacity-100 transition scale-100 data-[activo=true]:opacity-100 data-[activo=true]:scale-110 data-[activo=true]:ring-2 ring-brand rounded-md" data-pais="Colombia" title="Colombia">
+                                        <img src="https://flagcdn.com/co.svg" alt="Colombia" class="w-10 h-7 rounded-md object-cover shadow-sm">
+                                    </button>
+                                    <button class="btn-bandera opacity-50 hover:opacity-100 transition scale-100 data-[activo=true]:opacity-100 data-[activo=true]:scale-110 data-[activo=true]:ring-2 ring-brand rounded-md" data-pais="Uruguay" title="Uruguay">
+                                        <img src="https://flagcdn.com/uy.svg" alt="Uruguay" class="w-10 h-7 rounded-md object-cover shadow-sm">
+                                    </button>
+                                    <button class="btn-bandera opacity-50 hover:opacity-100 transition scale-100 data-[activo=true]:opacity-100 data-[activo=true]:scale-110 data-[activo=true]:ring-2 ring-brand rounded-md" data-pais="Chile" title="Chile">
+                                        <img src="https://flagcdn.com/cl.svg" alt="Chile" class="w-10 h-7 rounded-md object-cover shadow-sm">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-auto flex items-center gap-3">
+                                <div class="relative w-full md:w-56">
+                                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">🔍</span>
+                                    <input type="text" id="buscarClub" placeholder="Buscar..." class="w-full bg-slate-50 text-sm border border-slate-200 rounded-xl pl-9 pr-4 py-2 font-medium text-slate-700 focus:outline-none focus:border-brand">
+                                </div>
+                                <span class="text-[10px] font-bold text-dark bg-dark/5 px-2 py-2 rounded-xl shrink-0 whitespace-nowrap uppercase">
+                                    <span id="total-clubes-lista" class="font-black text-sm">0</span> res.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="lista-clubes-contenedor" class="grid sm:grid-cols-2 gap-4 max-h-[480px] overflow-y-auto pr-2 mb-4 scroll-smooth">
+                        </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-white p-6 rounded-2xl shadow-md border-t-4 border-dark flex flex-col items-center justify-center sticky top-10">
+                    <div class="text-center mb-4">
+                        <h3 class="font-black text-slate-800 text-lg">🗺️ Mapa de Procedencia</h3>
+                        <!-- <p class="text-xs text-slate-500 mt-1">Selecciona una ubicación para filtrar los clubes.</p> -->
+                        <p id="info-hover-mapa" class="text-sm font-bold text-slate-400 h-5 mt-1 transition-all">Seleccione una región para sobre el mapa para ver detalles</p>
+                    </div>
+
+                    <div class="w-full flex justify-center items-center bg-slate-50 rounded-2xl border border-slate-200/60 p-4 relative h-[480px] overflow-hidden">
+                        
+                        <div id="mapa-clubes-peru" class="w-full h-full max-w-[320px] flex justify-center items-center transition-opacity duration-300 opacity-100 [&>svg]:w-full [&>svg]:h-full [&>svg]:max-h-full">
+                            </div>
+                        
+                        <div id="mapa-clubes-mundo" class="w-full h-full absolute inset-0 m-auto flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-full">
+                            </div>
+                        
+                    </div>
+                    
+                    <div class="flex justify-center gap-4 mt-4 text-[11px] font-bold text-slate-600 border-t pt-4 w-full border-slate-100">
+                        <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 bg-brand rounded-sm shadow-sm"></span> Seleccionado</span>
+                        <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 bg-accent rounded-sm shadow-sm"></span> Con Participantes</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-2 pt-8 pb-4 bg-slate-50 gap-4">
+                <div class="bg-white p-4 rounded-2xl shadow-md border-l-4 border-accent flex items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-md font-black text-slate-800 block"> 54 CCYT Nacionales</span>
+                        <p class="text-xs font-semibold text-slate-500 tracking-wider">Representando a las 26 regiones del Perú</p>
+                    </div>
+                    <img src="https://flagcdn.com/pe.svg" alt="Perú" class="w-12 h-8 rounded-md object-cover shadow-sm border border-slate-100 shrink-0">
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl shadow-md border-l-4 border-brand flex items-center justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-md font-black text-slate-800 block"> 3 CCYT Internacionales</span>
+                        <p class="text-xs font-semibold text-slate-500 tracking-wider">Chile, Colombia y Uruguay</p>
+                    </div>
+                    <div class="flex -space-x-2 overflow-hidden">
+                        <img src="https://flagcdn.com/cl.svg" alt="Chile" class="inline-block h-7 w-10 rounded-md object-cover ring-2 ring-white shadow-sm">
+                        <img src="https://flagcdn.com/co.svg" alt="Colombia" class="inline-block h-7 w-10 rounded-md object-cover ring-2 ring-white shadow-sm">
+                        <img src="https://flagcdn.com/uy.svg" alt="Uruguay" class="inline-block h-7 w-10 rounded-md object-cover ring-2 ring-white shadow-sm">
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- --------------------------
+    SECCION ACTIVIDADES
+    -------------------------- -->
+
+   <section id="programa" class="py-20 bg-slate-100 ">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-dark uppercase tracking-wider">Actividades</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent">
+                    <div class="text-red-600 mb-4 text-3xl">🪧</div>
+                    <h3 class="text-xl font-bold mb-2">Presentación de pancartas</h3>
+                    <p class="text-slate-600 mb-4">Los miembros de los clubes de Ciencia y Tecnología presentan sus pancartas, lemas y una breve historia de su club.</p>
+                    <a href="##" target="_blank" class="text-brand font-bold hover:underline">Más información →</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent">
+                    <div class="text-red-600 mb-4 text-3xl">👩‍🏫</div>
+                    <h3 class="text-xl font-bold mb-2">Concurso de Monólogos Científicos</h3>
+                    <p class="text-slate-600 mb-4">Espacio dedicado a fomentar la divulgación científica desde la edad escolar y promover las capacidades comunicativas entre los estudiantes de los clubes.</p>
+                    <a href="##" target="_blank" class="text-brand font-bold hover:underline">Más información →</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:scale-105 transition transform border-t-4 border-accent">
+                    <div class="text-red-600 mb-4 text-3xl">🔭</div>
+                    <h3 class="text-xl font-bold mb-2">Feria de proyectos</h3>
+                    <p class="text-slate-600 mb-4">Los estudiantes podrán presentar los proyectos científicos y tecnológicos que han venido desarrollando en su club.</p>
+                    <a href="##" target="_blank" class="text-brand font-bold hover:underline">Más información →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-dark mb-4">Instituciones Organizadoras</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-10"></div>
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <img src="assets/logos/logo-concytec.png" alt="Concytec" class="h-20">
+                <img src="assets/logos/bid.png" alt="Banco Interamericano de Desarrollo" class="imagen-circular">
+                <img src="assets/logos/drehuanuco.png" alt="Dirección Regional de Educación de Huánuco" class="h-20">
+                <img src="assets/logos/ieisaacnewton.png" alt="Institución Educativa Isaac Newton de Huánuco" class="h-20">
+            </div>
+
+            <h2 class="text-3xl font-bold text-dark mb-4 mt-16">Instituciones Aliadas</h2>
+            <div class="h-1 w-20 bg-accent mx-auto mb-10"></div>
+            
+            <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <img src="assets/logos/mphuanuco.png" alt="Municipalidad Provincial de Huánuco" class="w-40">
+                <img src="assets/logos/ugelhuanuco.png" alt="Unidad de Gestión Educativa Huánuco" class="h-10">
+                <img src="assets/logos/unheval.png" alt="Universidad Nacional Hermilio Valdizán" class="h-10">
+            </div>
+            
+            <div class="mt-12 p-8 bg-white rounded-2xl border-dashed border-2 border-accent/30 max-w-3xl mx-auto">
+                <p class="text-dark italic text-lg">
+                    "Promoviendo el intercambio de experiencias de educación no formal para potenciar las vocaciones científicas y la cultura de indagación desde la educación básica."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-10 pb-8">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 pb-4">
+            <div>
+                <h3 class="text-brand font-bold text-xl mb-4">II Encuentro Nacional y II Encuentro Internacional de CCYT</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Espacio de encuentro y desarrollo de habilidades para miembros de clubes de ciencia y tecnología.
+                </p>
+            </div>
+            <div></div>
+            <div>
+                <h4 class="font-bold mb-4 uppercase text-accent tracking-widest text-sm">Contacto</h4>
+                <p class="text-slate-400 text-sm">📍 Av. del Aire 485, San Borja, Lima</p>
+                <p class="text-slate-400 text-sm">☎️ 0051-1-399-0030 anexo 1220</p>
+                <p class="text-slate-400 text-sm">📧 popularizacion@concytec.gob.pe</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.facebook.com/concytec/" target="_blank" rel="noopener noreferrer" class="text-xl hover:text-brand cursor-pointer">FB</a>
+                    <a href="https://www.instagram.com/concytecperu/" target="_blank" rel="noopener noreferrer" class="text-xl hover:text-brand cursor-pointer">IG</a>
+                    <a href="https://www.youtube.com/ConcytecPeru" target="_blank" rel="noopener noreferrer" class="text-xl hover:text-brand cursor-pointer">YT</a>
+                    <a href="https://www.tiktok.com/@concytecperu" target="_blank" rel="noopener noreferrer" class="text-xl hover:text-brand cursor-pointer">TT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+    
+</html>
