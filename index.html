@@ -16,43 +16,52 @@
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
-    <header id="inicio" class="relative h-[80vh] flex items-center justify-center text-center text-white bg-slate-900">
+    <header id="inicio" class="relative min-h-[80vh] flex items-center justify-center text-center text-white bg-slate-900 py-20">
         <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-40">
             <source src="assets/video/encuentros.mp4" type="video/mp4">
             Tu navegador no soporta videos.
         </video>
 
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/30 via-slate-900/50 to-slate-900"></div>
 
-        <div class="relative z-10 px-4 mt-80 animate__animated animate__fadeInUp">
-            <h1 class="text-3xl md:text-5xl font-extrabold mb-3">II Encuentro Nacional y <br>II Encuentro Internacional de <br> <span class="text-brand">Clubes de Ciencia y Tecnología</span></h1>
-            <p class="text-xl md:text-4xl font-extrabold mb-3 max-w-2xl mx-auto">Huánuco, 2026</p>
-            <p class="text-xl md:text-3xl font-extrabold mb-4 max-w-2xl mx-auto">18, 19 y 20 de agosto</p>
+        <div class="relative z-10 px-6 w-full max-w-5xl animate__animated animate__fadeInUp flex flex-col items-center justify-center">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                II Encuentro Nacional y <br class="hidden md:block">
+                II Encuentro Internacional de <br> 
+                <span class="text-brand">Clubes de Ciencia y Tecnología</span>
+            </h1>
+            <p class="text-xl md:text-3xl font-bold mb-2 text-slate-200">Huánuco, 2026</p>
+            <p class="text-lg md:text-2xl font-medium mb-8 text-slate-300">18, 19 y 20 de agosto</p>
             
-            <div class="flex py-0 flex-wrap justify-center gap-4">
-                <a href="https://sites.google.com/concytec.gob.pe/pop/eiccyt/monologos" target="_blank" class="border-2 border-white px-8 py-2 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Concurso de monólogos</a>
-                <a href="https://www.youtube.com/watch?v=rc3lQS-NrHs&t=8s" target="_blank" class="border-2 border-white px-8 py-2 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Taller de inducción</a>
-                <a href="https://forms.gle/Jagw4j2ENNtJgktn9" target="_blank" class="border-2 border-white px-8 py-2 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">Memoria del encuentro</a>
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 w-full">
+                <a href="https://sites.google.com/concytec.gob.pe/pop/eiccyt/monologos" target="_blank" class="w-full sm:w-auto border-2 border-white/80 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-slate-900 hover:scale-105 transition-all duration-300 shadow-lg">
+                    🎭 Concurso de monólogos
+                </a>
+                <a href="https://www.youtube.com/watch?v=rc3lQS-NrHs&t=8s" target="_blank" class="w-full sm:w-auto border-2 border-brand bg-brand px-6 py-3 rounded-xl font-bold text-white hover:bg-brand/80 hover:border-brand/80 hover:scale-105 transition-all duration-300 shadow-lg shadow-brand/30">
+                    📺 Taller de inducción
+                </a>
+                <a href="https://forms.gle/Jagw4j2ENNtJgktn9" target="_blank" class="w-full sm:w-auto border-2 border-white/80 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-slate-900 hover:scale-105 transition-all duration-300 shadow-lg">
+                    📝 Memoria del encuentro
+                </a>
             </div>
         </div>
     </header>
 
-    <div class="sub-nav flex flex-wrap justify-center bg-slate-50">
-        <a href="#presentacion">Sobre el encuentro</a>
-        <a href="#clubes">Participantes</a>
-        <a href="#programa">Programa</a>
-        <a href="#ponentes">Ponentes</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#velada">Velada cultural</a>
-        <a href="#recursos">Recursos</a>
-
-    </div>
+    <nav class="sub-nav sticky top-0 z-50 flex flex-wrap justify-center gap-2 md:gap-4 bg-slate-50 border-b border-slate-200 py-1 px-4 shadow-sm backdrop-blur-md bg-slate-50/90">
+        <a href="#presentacion" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Sobre el encuentro</a>
+        <a href="#clubes" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Participantes</a>
+        <a href="#programa" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Programa</a>
+        <a href="#ponentes" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Ponentes</a>
+        <a href="#actividades" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Actividades</a>
+        <a href="#velada" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Velada cultural</a>
+        <a href="#recursos" class="text-xs md:text-sm font-bold text-slate-600 hover:text-brand transition-colors px-2 py-1">Recursos</a>
+    </nav>
 
     <!-- -----------------
     SECCION PRESENTACION
     ---------------------- -->
 
-    <section id="presentacion" class="py-16 bg-slate-100 relative overflow-hidden">
+    <section id="presentacion" class="py-28 md:py-16 bg-slate-100 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
@@ -165,7 +174,7 @@
     SECCION CLUBES DE CIENCIA PARTICIPANTES
     --------------------------------------- -->
 
-    <section id="clubes" class="py-16 bg-white relative overflow-hidden">
+    <section id="clubes" class="py-28 md:py-16 bg-white relative overflow-hidden">
         
         <div class="container mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
             
@@ -285,7 +294,7 @@
     -------------------------- -->
    
     
-    <section id="programa" class="py-16 bg-slate-100 relative overflow-hidden">
+    <section id="programa" class="py-28 md:py-16 bg-slate-100 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
@@ -491,7 +500,7 @@
     SECCION PONENTES INTERNACIONALES
     --------------------------------------- -->
 
-    <section id="ponentes" class="py-16 bg-slate-50 relative overflow-hidden">
+    <section id="ponentes" class="py-28 md:py-16 bg-slate-50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute bottom-0 -left-24 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
@@ -586,7 +595,7 @@
     SECCION ACTIVIDADES
     -------------------------- -->
 
-    <section id="actividades" class="py-16 bg-slate-100 relative overflow-hidden">
+    <section id="actividades" class="py-28 md:py-16 bg-slate-100 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
@@ -692,7 +701,7 @@
     SECCION VELADA CULTURAL
     -------------------------- -->
 
-    <section id="velada" class="py-12 bg-slate-50 relative overflow-hidden">
+    <section id="velada" class="py-28 md:py-16 bg-slate-50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -bottom-32 -right-32 w-[30rem] h-[30rem] bg-accent opacity-10 rounded-full blur-3xl"></div>
         </div>
@@ -804,7 +813,7 @@
     SECCION RECURSOS
 -------------------------- -->
 
-    <section id="recursos" class="py-16 bg-slate-100 relative">
+    <section id="recursos" class="py-28 md:py-16 bg-slate-100 relative">
         <div class="container mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
             
             <div class="flex flex-col items-center mb-10">
@@ -900,7 +909,7 @@
 INSTITUCIONES
 -------------------- -->
 
-    <section class="py-16 bg-slate-50 relative overflow-hidden">
+    <section class="py-28 md:py-16 bg-slate-50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
